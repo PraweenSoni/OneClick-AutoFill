@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Input Field Highlighter",
+    "version": "1.0",
+    "description": "Highlights all input fields on a webpage with red borders.",
+    "permissions": ["activeTab", "tabs"],
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
