@@ -5,12 +5,16 @@
   <style>
     body {
       margin: 10px;
+      height: 10rem;
     }
     label{
       display: flex;
     }
     label input{
       margin-right: 7px;
+    }
+    body ul li{
+      list-style: number;
     }
   </style>
 </head>
@@ -19,6 +23,11 @@
     <input type="checkbox" id="highlight-checkbox" />
     <p>Highlight All Inputs Fields</p>
   </label>
+  <ul>
+    <li><input type="text"></li>
+    <li><input type="text"></li>
+  </ul>
+  <button>Submit Data</button>
   <script src="popup.js"></script>
 </body>
 </html>
